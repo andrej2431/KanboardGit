@@ -1,75 +1,61 @@
-```html
-<!--
-ADJUST THIS PAGE TO YOUR REQUIREMENTS. REMEMBER TO DELETE THIS SECTION.
-TO KEEP THE README BADGES FUNCTIONAL, REPLACE THE USERNAME AND REPO NAME ACCORDINGLY
--->
-```
-<h1 name="user-content-readme-top">`Plugin Name`</h1>
+<h1 name="user-content-readme-top">`KanboardGit`</h1>
 <p align="center">
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/v/release/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
+    <a href="https://github.com/andrej2431/KanboardGit/releases">
+        <img src="https://img.shields.io/github/v/release/andrej2431/KanboardGit?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/downloads/aljawaid/KanboardSkeletonPlugin/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
+    <a href="https://github.com/andrej2431/KanboardGit/releases">
+        <img src="https://img.shields.io/github/downloads/andrej2431/KanboardGit/total?style=for-the-badge&color=orange" alt="GitHub All Releases" title="GitHub All Downloads">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/directory-file-count/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Repository File Count" title="GitHub Repository File Count">
+    <a href="https://github.com/andrej2431/KanboardGit/releases">
+        <img src="https://img.shields.io/github/directory-file-count/andrej2431/KanboardGit?style=for-the-badge&color=orange" alt="GitHub Repository File Count" title="GitHub Repository File Count">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/repo-size/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Repository Size" title="GitHub Repository Size">
+    <a href="https://github.com/andrej2431/KanboardGit/releases">
+        <img src="https://img.shields.io/github/repo-size/andrej2431/KanboardGit?style=for-the-badge&color=orange" alt="GitHub Repository Size" title="GitHub Repository Size">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/releases">
-        <img src="https://img.shields.io/github/languages/code-size/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=orange" alt="GitHub Code Size" title="GitHub Code Size">
+    <a href="https://github.com/andrej2431/KanboardGit/releases">
+        <img src="https://img.shields.io/github/languages/code-size/andrej2431/KanboardGit?style=for-the-badge&color=orange" alt="GitHub Code Size" title="GitHub Code Size">
     </a>
 </p>
 <p align="center">
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/discussions">
-        <img src="https://img.shields.io/github/discussions/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Discussions" title="Read Discussions">
+    <a href="https://github.com/andrej2431/KanboardGit/discussions">
+        <img src="https://img.shields.io/github/discussions/andrej2431/KanboardGit?style=for-the-badge&color=blue" alt="GitHub Discussions" title="Read Discussions">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare">
-        <img src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
+    <a href="https://github.com/andrej2431/KanboardGit/compare">
+        <img src="https://img.shields.io/github/commits-since/andrej2431/KanboardGit/latest?include_prereleases&style=for-the-badge&color=blue" alt="GitHub Commits Since Last Release" title="GitHub Commits Since Last Release">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare">
-        <img src="https://img.shields.io/github/commit-activity/m/aljawaid/KanboardSkeletonPlugin?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
+    <a href="https://github.com/andrej2431/KanboardGit/compare">
+        <img src="https://img.shields.io/github/commit-activity/m/andrej2431/KanboardGit?style=for-the-badge&color=blue" alt="GitHub Commit Monthly Activity" title="GitHub Commit Monthly Activity">
     </a>
     <a href="https://github.com/kanboard/kanboard" title="Kanboard - Kanban Project Management Software">
         <img src="https://img.shields.io/badge/Plugin%20for-kanboard-D40000?style=for-the-badge&labelColor=000000" alt="Kanboard">
     </a>
 </p>
 
-
-```html
-<!--
-REMOVE BLOCK
-Brief intro
--->
-```
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
-- `main features list`
-- `main features list`
+- `shows commits (message, name, link) in the full task page`
+- `jsonrpc api endpoint addCommit for adding a commit`
+- `jsonrpc api endpoints canTaskMoveToColumn and moveTaskToColumn for moving task, take task_id and column_title`
+- `Pre-receive and Post-receive hooks to be put in repository serverside. (not yet fully finished)`
+- `commit message starting with #{task_id} will put the commit under task with that id`
+- `commit message that has [column_title] after #{task_id} will move that task under specified column if possible`
+- `commits in branches with name {task_id}-... will default to branch task if none is specified`
+
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
-**title**  
+**Task Example**  
 
-![Screenshot Name](../master/Screenshots/screenshot-name.png "Read Screenshot Name")
+![Task Example](Assets/example_task.png "Task Example")
 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
-
-```html
-<!--
-REMOVE BLOCK
-Go to `Settings` &#10562;
--->
-```
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -104,7 +90,7 @@ Go to `Settings` &#10562;
 
 ## Authors & Contributors
 
-- [@](https://github.com/url) - Author
+- [@Andrej Thomas Dobrev](https://github.com/andrej2431) - Author
 - _Contributors welcome_
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
@@ -116,26 +102,26 @@ Go to `Settings` &#10562;
 ---
 
 <p align="center">
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/stargazers" title="View Stargazers">
-        <img src="https://img.shields.io/github/stars/aljawaid/KanboardSkeletonPlugin?logo=github&style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/andrej2431/KanboardGit/stargazers" title="View Stargazers">
+        <img src="https://img.shields.io/github/stars/andrej2431/KanboardGit?logo=github&style=flat-square" alt="KanboardGit">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/forks" title="See Forks">
-        <img src="https://img.shields.io/github/forks/aljawaid/KanboardSkeletonPlugin?logo=github&style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/andrej2431/KanboardGit/forks" title="See Forks">
+        <img src="https://img.shields.io/github/forks/andrej2431/KanboardGit?logo=github&style=flat-square" alt="KanboardGit">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/blob/master/LICENSE" title="Read License">
-        <img src="https://img.shields.io/github/license/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/andrej2431/KanboardGit/blob/master/LICENSE" title="Read License">
+        <img src="https://img.shields.io/github/license/andrej2431/KanboardGit?style=flat-square" alt="KanboardGit">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/issues" title="Open Issues">
-        <img src="https://img.shields.io/github/issues-raw/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/andrej2431/KanboardGit/issues" title="Open Issues">
+        <img src="https://img.shields.io/github/issues-raw/andrej2431/KanboardGit?style=flat-square" alt="KanboardGit">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/issues?q=is%3Aissue+is%3Aclosed" title="Closed Issues">
-        <img src="https://img.shields.io/github/issues-closed/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/andrej2431/KanboardGit/issues?q=is%3Aissue+is%3Aclosed" title="Closed Issues">
+        <img src="https://img.shields.io/github/issues-closed/andrej2431/KanboardGit?style=flat-square" alt="KanboardGit">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/discussions" title="Read Discussions">
-        <img src="https://img.shields.io/github/discussions/aljawaid/KanboardSkeletonPlugin?style=flat-square" alt="KanboardSkeletonPlugin">
+    <a href="https://github.com/andrej2431/KanboardGit/discussions" title="Read Discussions">
+        <img src="https://img.shields.io/github/discussions/andrej2431/KanboardGit?style=flat-square" alt="KanboardGit">
     </a>
-    <a href="https://github.com/aljawaid/KanboardSkeletonPlugin/compare/" title="Latest Commits">
-        <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/KanboardSkeletonPlugin/latest?style=flat-square">
+    <a href="https://github.com/andrej2431/KanboardGit/compare/" title="Latest Commits">
+        <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/andrej2431/KanboardGit/latest?style=flat-square">
     </a>
 </p>
 <p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
