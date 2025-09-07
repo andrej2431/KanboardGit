@@ -35,7 +35,7 @@
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
-
+- `CURRENTLY TESTED ONLY USING GITEA`
 - `shows commits (message, name, link) in the full task page`
 - `jsonrpc api endpoint addCommit for adding a commit`
 - `jsonrpc api endpoints canTaskMoveToColumn and moveTaskToColumn for moving task, take task_id and column_title`
@@ -57,6 +57,14 @@
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
+Install the plugin like shown in next section.
+Put the Pre receive hook and post receive hook in their folders under repo server side hooks, give them permision to be executed.  
+Put GitParser.py in the folder above them.  
+Change in both hooks the url, username and password for kanboard.  
+Enable hooks if they are not enabled.  
+Now #{task_id} in commit message start should assign the commit to a task.   
+\[column_title\] after #{task_id} should move the task to column with that title if possible  
+{task_id}-branch-name named branches keep that task as the default for their commits  
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
