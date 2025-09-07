@@ -31,6 +31,7 @@
     </a>
 </p>
 
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
@@ -48,9 +49,9 @@
 
 ## Screenshots
 
-**Task Example**  
+**Example Task**  
 
-![Task Example](Assets/example_task.png "Task Example")
+![Example Task](/Assets/example_task.png "Read Screenshot Name")
 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>

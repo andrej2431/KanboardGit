@@ -30,14 +30,16 @@ class CommitModel extends Base {
             'date' => $commit["date"],
             'link' => $commit["link"],
             'branch_name' => $commit["branch_name"],
-            'task_id' => $commit["task_id"],
-            'description' => $commit["desc"]
+            'task_id' => (int) $commit["task_id"],
+            'description' => $commit["desc"],
+            'new_column_title' => $commit["new_column_title"],
+            'replaced' => false,
         );
-        
+    
         return $this->db->table(self::TABLE)->persist($values);
     }
 
     public function getCommitsByTask($task){
-        return $this->db->table(self::TABLE)->eq('task_id', $task['id'])->findAll();
+        return ["commits" => $this->db->table(self::TABLE)->eq('task_id', $task['id'])->findAll()];
     }
 }

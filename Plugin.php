@@ -17,20 +17,24 @@ class Plugin extends Base
         $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardGit/Assets/css/kanboard-git.css'));
         $this->hook->on('template:layout:js', array('template' => 'plugins/KanboardGit/Assets/js/kanboard-git.js'));
 
-        // Setting
+        // Settings
         $this->template->hook->attach('template:config:sidebar', 'KanboardGit:config/sidebar');
         $this->route->addRoute('/settings/KanboardGit', 'KanboardGitController', 'config', 'KanboardGit');
 
         // Commits section in Task details
-
         $this->template->hook->attachCallable('template:task:show:bottom', 'KanboardGit:TaskCommits',
             fn($task, $project)=>$this->commitModel->getCommitsByTask($task));
         
+        
+        // API
         $this->api->getProcedureHandler()->withCallback('addCommit',
             fn($commit)=>$this->commitModel->addCommit($commit));
 
         $this->api->getProcedureHandler()->withCallback('canTaskMoveToColumn', 
-            fn($task_id, $column_name)=>$this->helper->KanboardGitHelper->canTaskMoveToColumn($task_id, $column_name));
+            fn($task_id, $column_title)=>$this->helper->KanboardGitHelper->canTaskMoveToColumn($task_id, $column_title));
+
+        $this->api->getProcedureHandler()->withCallback('moveTaskToColumn',
+        fn($task_id, $column_title)=>$this->helper->KanboardGitHelper->moveTaskToColumn($task_id, $column_title));
     }
 
     public function onStartup()
