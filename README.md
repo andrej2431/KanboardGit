@@ -1,4 +1,5 @@
 <h1 name="user-content-readme-top">`KanboardGit`</h1>
+
 <p align="center">
     <a href="https://github.com/andrej2431/KanboardGit/releases">
         <img src="https://img.shields.io/github/v/release/andrej2431/KanboardGit?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
@@ -35,6 +36,7 @@
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
+
 - `CURRENTLY TESTED ONLY USING GITEA`
 - `shows commits (message, name, link) in the full task page`
 - `jsonrpc api endpoint addCommit for adding a commit`
